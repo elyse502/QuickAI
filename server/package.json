@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@clerk/express": "^1.7.24",
     "@neondatabase/serverless": "^1.0.1",
     "axios": "^1.11.0",
     "cloudinary": "^2.7.0",
