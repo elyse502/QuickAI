@@ -23,7 +23,7 @@ const navItems = [
   { to: "/ai/community", label: "Community", Icon: Users },
 ];
 
-const sidebar = ({ sidebar, setSidebar }) => {
+const Sidebar = ({ sidebar, setSidebar }) => {
   const { user } = useUser();
   const { signOut, openUserProfile } = useClerk();
 
@@ -96,4 +96,4 @@ const sidebar = ({ sidebar, setSidebar }) => {
   );
 };
 
-export default sidebar;
+export default Sidebar;
