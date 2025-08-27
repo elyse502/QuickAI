@@ -9,16 +9,9 @@ import RemoveBackground from "./pages/RemoveBackground";
 import RemoveObject from "./pages/RemoveObject";
 import ReviewResume from "./pages/ReviewResume";
 import Community from "./pages/Community";
-import { useAuth } from "@clerk/clerk-react";
-import { useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
-  const { getToken } = useAuth();
-  useEffect(() => {
-    getToken().then((token) => console.log(token));
-  }, []);
-
   return (
     <div>
       <Toaster />
