@@ -17,3 +17,17 @@
 .cl-drawerRoot {
   z-index: 10;
 }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Shift by half since we duplicated */
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 20s linear infinite; /* ⏱ adjust speed */
+}
